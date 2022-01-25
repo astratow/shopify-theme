@@ -1,5 +1,5 @@
 <div class="hero-image section">
-    <img src="">
+    <img src="{{ section.settings.image | img_url: 'master'}}">
 </div>
 
 {% schema %}
@@ -11,6 +11,10 @@
             "id": "image",
             "label": "Image"
         }
+    ],
+    "preset": [
+        "name": "Hero Image",
+        "category": "Image"
     ]
 }
 {% endschema%}
